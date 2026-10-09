@@ -1,0 +1,3 @@
+Prepared: game.py, README.md, implementation notes.
+Not included: gameplay videos; none were recorded.
+Not verified: runtime gameplay or visual behavior.
