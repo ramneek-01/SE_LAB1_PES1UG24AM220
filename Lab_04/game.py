@@ -20,7 +20,7 @@ def cube_palette(level):
         [(150, 120, 220), (90, 200, 120), (240, 130, 60)],
         [(230, 150, 70), (90, 150, 230), (210, 90, 110)],
     )
-    return None
+    return palettes[(level - 1) % len(palettes)]
 
 
 def on_cube_completed(cell):
