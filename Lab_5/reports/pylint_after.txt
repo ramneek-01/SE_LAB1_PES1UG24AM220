@@ -1,0 +1,4 @@
+************* Module tournament_scoreboard
+Your code has been rated at 10.00/10
+
+Source: terminal screenshot supplied by the student. This score was captured before the final removal of the subprocess publishing helper.
