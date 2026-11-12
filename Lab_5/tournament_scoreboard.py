@@ -96,7 +96,8 @@ def table_file_path():
 
 def main():
     """Run the sample tournament and print the league table."""
-    for name in ("Royal Strikers", "City Rovers", "Lake United", "Hill Warriors"):
+    team_names = ("Royal Strikers", "City Rovers", "Lake United", "Hill Warriors")
+    for name in team_names:
         add_team(name)
     print("Toss:", toss_coin())
     record_match("Royal Strikers", "City Rovers", 2, 1)
