@@ -1,6 +1,6 @@
 """Tournament scoreboard used for the Lab 5 static-analysis exercise."""
 
-import os
+import subprocess
 import random
 import tempfile
 
@@ -97,7 +97,7 @@ def table_file_path():
 
 def publish_table(server):
     """Publish the table to a remote host."""
-    os.system("scp table.json " + server + ":/var/www/")
+    subprocess.run(["scp", "table.json", f"{server}:/var/www/"], check=True, shell=False)
 
 
 def main():
