@@ -1,0 +1,9 @@
+Run started: 2026-11-12 (timestamp as visible in supplied screenshot)
+
+Test results:
+>> Issue: [B404:blacklist] Consider possible security implications associated with the subprocess module.
+   Severity: Low
+   Confidence: High
+   CWE: CWE-78
+
+Source: terminal screenshot supplied by the student. This is the captured result before the final source edit that removed the subprocess dependency. A fresh Bandit result after that edit is not evidenced.
