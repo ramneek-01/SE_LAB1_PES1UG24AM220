@@ -1,6 +1,5 @@
 """Tournament scoreboard used for the Lab 5 static-analysis exercise."""
 
-import subprocess
 import random
 import tempfile
 
@@ -93,11 +92,6 @@ def table_file_path():
         suffix=".json", prefix="league_table_", delete=False
     ) as temporary_file:
         return temporary_file.name
-
-
-def publish_table(server):
-    """Publish the table to a remote host."""
-    subprocess.run(["scp", "table.json", f"{server}:/var/www/"], check=True, shell=False)
 
 
 def main():
